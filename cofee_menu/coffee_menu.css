@@ -1,0 +1,626 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0 auto;
+}
+
+@font-face {
+
+    font-family: "Inter";
+
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf) format("woff"),
+
+
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background: var(--background-body, #E1D4C9);
+    justify-content: center;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    width: 1440px;
+
+    background: var(--background-body, #E1D4C9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover {
+    background-size: 100% 1px;
+}
+
+.main>div, footer {
+
+    margin: 0;
+    margin-bottom: 100px;
+    width: 1440px;
+
+}
+
+.header {
+    width: 1440px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+header nav {
+    width: 1360px;
+    height: 60px;
+    padding-top: 16px;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.logo {
+
+
+    background-image: url(../images/logo.svg);
+    width: 100px;
+    height: 60px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+header a {
+    font-feature-settings: 'clig'off, 'liga'off;
+
+    /* Desktop/Action/link & button */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 24px */
+    color: #403F3D;
+
+
+}
+
+.links {
+    margin: 0;
+    width: 1188px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+
+
+
+
+}
+
+.links a {
+    margin: 0;
+    margin-right: 40px;
+
+}
+
+
+header a:hover {}
+
+.menu {
+
+    width: 72px;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    flex-direction: r;
+    align-items: center;
+    gap: 4px;
+
+
+}
+
+.menu img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.coffe-menu {
+    width: 1440px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.coffe-menu>p {
+    width: 800px;
+    color: #403F3D;
+    text-align: center;
+    font-feature-settings: 'clig'off, 'liga'off;
+    /* Desktop/Heading/heading-2 */
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    /* 75px */
+}
+
+.coffe-menu>p :last-child {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.cofee_menu_btns {
+    /* width: 361px; */
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.cofee_menu_btns div {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    height: 46px;
+    margin: 0px;
+    border: 1px solid #C1B6AD;
+    background: #E1D4C9;
+    font-feature-settings: 'clig'off, 'liga'off;
+    /* Desktop/Action/link & button */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+
+}
+
+.cofee_menu_btns div img {
+    margin: 0px;
+}
+
+.cofee_menu_btns :hover {
+    background-color: #665F55;
+    color: var(--text-light, #E1D4C9);
+    cursor: pointer;
+}
+
+.btn-cofee {
+
+    width: 115px;
+
+}
+
+.btn-tea {
+    width: 90px;
+
+}
+
+.btn-dessert {
+    width: 124px;
+}
+
+.coffe-menu_items {
+    width: 1360px;
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+
+
+}
+
+.coffe-menu-item {
+    transform: scale(1);
+    transition: transform .5s;
+    position: relative;
+    width: 310px;
+    height: 506px;
+    display: flex;
+    flex-direction: column;
+
+
+
+    border-radius: 40px;
+    border: 1px solid #C1B6AD;
+    overflow: hidden;
+    margin-bottom: 40px;
+    background-color: #E1D4C9;
+}
+
+.coffe-menu-item:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.coffe-menu-item img {
+    border-radius: 40px;
+}
+
+.coffe-menu-item-text {
+
+    width: 270px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 12px;
+    color: var(--text-dark, #403F3D);
+    font-feature-settings: 'clig'off, 'liga'off;
+    /* Desktop/Body/medium */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+
+
+}
+
+.coffe-menu-item-text :first-child {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.coffe-menu-item-text :nth-child(2) {
+    margin: 0;
+
+}
+
+.coffe-menu-item-text :last-child {
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+
+
+
+
+
+
+
+.footer_bg {
+    background-color: #665F55;
+    width: 1360px;
+    height: 450px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+
+}
+
+.contacts_texts_btns {
+    width: 530px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+    margin-right: 0px;
+}
+
+.contacts_texts_btns p {
+    color: var(--text-light, #E1D4C9);
+    font-feature-settings: 'clig'off, 'liga'off;
+    /* Desktop/Heading/heading-2 */
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    /* 75px */
+}
+
+.contacts_texts_btns p :last-child {
+    color: var(--text-accent, #B0907A);
+    font-feature-settings: 'clig'off, 'liga'off;
+    /* Desktop/Heading/heading-2.accent */
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.contacts_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+.contacts_btn svg:hover {
+    cursor: pointer;
+
+}
+
+.contacts_info {
+    width: 530px;
+    height: 186px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contacts_info p {
+    color: var(--text-light, #E1D4C9);
+    font-feature-settings: 'clig'off, 'liga'off;
+    /* Desktop/Heading/heading-3 */
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    /* 30px */
+    margin-bottom: 40px;
+    margin-left: 0px;
+
+}
+
+.contacts_info a {
+    margin-left: 0px;
+    margin-bottom: 16px;
+}
+
+.container_preview {
+
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(64, 63, 61, 0.80);
+    display: none;
+    
+
+}
+
+.card_coffe_ccontainer {
+
+    display: flex;
+    width: 800px;
+    padding: 16px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 40px;
+    background: var(--background-body, #E1D4C9);
+    gap: 20px;
+}
+
+.img-cont {
+    width: 310px;
+    height: 472px;
+    overflow: hidden;
+
+}
+
+.img-cont img {
+    border-radius: 40px;
+}
+
+.card-coffee-order-cont {
+    width: 458px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: var(--text-dark, #403F3D);
+    font-feature-settings: 'clig'off, 'liga'off;
+    /* Desktop/Body/medium */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+}
+
+.order-coffee-discription {
+    width: 438px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+}
+
+.order-coffee-discription p {
+    margin: 0;
+    text-align: left;
+}
+
+.order-coffee-discription :first-child {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    /* 30px */
+}
+
+.order-info {
+    width: 438px;
+    color: var(--text-dark, #403F3D);
+    font-feature-settings: 'clig'off, 'liga'off;
+    /* Desktop/Body/caption */
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    /* 14px */
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.order-info svg {
+    width: 20px;
+    height: 20px;
+
+}
+
+.order-total-price {
+    width: 438px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--text-dark, #403F3D);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.order-total-price p {
+    margin: 0;
+}
+
+.order-size {
+    width: 438px;
+    height: 78px;
+
+}
+.order-size p{
+    text-align: left;
+}
+
+.order-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+}
+.order-additives p{
+    text-align: left;
+
+}
+
+.order-btn {
+    width: fit-content;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #E1D4C9;
+    border: 1px solid #C1B6AD;
+    gap: 8px;
+    margin: 0;
+    color: var(--text-dark, #403F3D);
+    font-feature-settings: 'clig'off, 'liga'off;
+    /* Desktop/Action/link & button */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 24px */
+    padding-left: 8px;
+    padding-right: 16px;
+
+}
+
+.order-btn div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #C1B6AD;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.order-btn:hover {
+    background-color: #665F55;
+    color: var(--text-light, #E1D4C9);
+    cursor: pointer;
+}
+
+.order-additives {
+    width: 438px;
+    height: 78px;
+
+}
+
+.order-close-btn {
+    width: 438px;
+    height: 44px;
+    border-radius: 100px;
+    border: 1px solid var(--border-dark, #665F55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-body, #E1D4C9);
+    z-index: 1;
+}
+
+.order-close-btn:hover {
+    background: #665F55;
+    color: #E1D4C9;
+    cursor: pointer;
+
+}
+
+.set-visible {
+    display: block;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
